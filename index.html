@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Finder</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+
+
+
+    <header>
+        <div class="container">
+            <div class="logo">Flight Finder</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Flights</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Find Flights</h1>
+            <div class="form-group">
+                <label for="airportSelect">Select Departure Airport:</label>
+                <select id="airportSelect">
+                    <option value="">--Select Airport--</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destinationSelect">Select Destination:</label>
+                <select id="destinationSelect">
+                    <option value="">--Select Destination--</option>
+                </select>
+            </div>
+            <button id="findFlightsButton">Find Flights</button>
+            <div id="flightsContainer"></div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        transform: translateY(-50px);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+h1 {
+    animation: jump 1.5s infinite;
+    text-align: center;
+    font-size: 2em;
+color: white;
+font-family: 'Press Start 2P', cursive;
+    margin-top: 20%;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #87CEEB, #004080);
+    color: #004080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.airplane {
+    width: 150px;
+    height: auto;
+    animation: fly 3s linear infinite;
+}
+
+.loading-text {
+    font-size: 2em;
+    color: white;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.content-container {
+    text-align: center;
+}
+
+.flight-details {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flight-details h2 {
+    margin-top: 0;
+    color: #004080;
+}
+
+#flightInfo {
+    margin-top: 20px;
+    color: #333;
+}
+
+
+@keyframes fly {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px) translateY(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
