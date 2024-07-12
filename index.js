@@ -67,6 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 
                 flightElement.querySelector('.book-flight-button').addEventListener('click', () => {
+                    const flightInfo = {
+                        flightId: flight.id,
+                        departureTime: flight.departureTime,
+                        arrivalTime: flight.arrivalTime,
+                        price: flight.price,
+                        currency: flight.currency
+                    };
+                    localStorage.setItem('selectedFlight', flightInfo.flightId);
                     window.location.href = `booking.html?flightId=${flight.id}`;
                 });
 

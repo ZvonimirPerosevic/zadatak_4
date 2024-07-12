@@ -158,16 +158,27 @@ button[type="submit"] {
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 20px;
 }
-
-#bookingForm{
-    text-align: center;
+#date{
+    width: 90%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #004080;
+    margin: 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #004080;  
 }
-
-#cardForm{
-    text-align: center;
+#cvv{
+    width: 90%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #004080;
+    margin: 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #004080;  
 }
-
-#cardNumber{
+#card{
     width: 90%;
     padding: 10px;
     font-size: 1em;
@@ -176,6 +187,13 @@ button[type="submit"] {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.9);
     color: #004080;
+}
+#bookingForm{
+    text-align: center;
+}
+
+#cardForm{
+    text-align: center;
 }
 
 button[type="submit"]:hover {
